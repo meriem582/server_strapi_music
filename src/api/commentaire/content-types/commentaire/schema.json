@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "commentaires",
+  "info": {
+    "singularName": "commentaire",
+    "pluralName": "commentaires",
+    "displayName": "commentaire",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "contenu": {
+      "type": "text"
+    },
+    "id_commentaire": {
+      "type": "uid"
+    },
+    "id_user": {
+      "type": "biginteger"
+    },
+    "id_track": {
+      "type": "biginteger"
+    },
+    "date_commentaire": {
+      "type": "date"
+    }
+  }
+}

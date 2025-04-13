@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "responses",
+  "info": {
+    "singularName": "response",
+    "pluralName": "responses",
+    "displayName": "response",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "id_response": {
+      "type": "uid"
+    },
+    "contenu": {
+      "type": "text"
+    },
+    "date_response": {
+      "type": "date"
+    },
+    "id_commentaire": {
+      "type": "biginteger"
+    }
+  }
+}

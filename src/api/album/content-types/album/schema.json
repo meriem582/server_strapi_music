@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "albums",
+  "info": {
+    "singularName": "album",
+    "pluralName": "albums",
+    "displayName": "Album",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "link": {
+      "type": "text",
+      "required": true
+    },
+    "release_date": {
+      "type": "date"
+    },
+    "cover": {
+      "type": "text"
+    },
+    "id_album": {
+      "type": "biginteger",
+      "unique": true
+    },
+    "id_artist": {
+      "type": "biginteger"
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tracks",
+  "info": {
+    "singularName": "track",
+    "pluralName": "tracks",
+    "displayName": "track",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "id_track": {
+      "type": "biginteger"
+    },
+    "preview": {
+      "type": "text"
+    },
+    "link": {
+      "type": "text"
+    },
+    "duration": {
+      "type": "biginteger"
+    },
+    "rank": {
+      "type": "biginteger"
+    },
+    "release_date": {
+      "type": "date"
+    },
+    "explicit_lyrics": {
+      "type": "boolean"
+    },
+    "id_album": {
+      "type": "biginteger"
+    },
+    "id_artist": {
+      "type": "biginteger"
+    }
+  }
+}

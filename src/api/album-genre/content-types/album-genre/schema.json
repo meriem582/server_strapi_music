@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "album_genres",
+  "info": {
+    "singularName": "album-genre",
+    "pluralName": "album-genres",
+    "displayName": "Album_genre",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "id_genre": {
+      "type": "biginteger"
+    },
+    "id_album": {
+      "type": "biginteger"
+    }
+  }
+}

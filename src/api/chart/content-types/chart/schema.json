@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "charts",
+  "info": {
+    "singularName": "chart",
+    "pluralName": "charts",
+    "displayName": "Chart",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "text"
+    },
+    "link": {
+      "type": "text"
+    },
+    "preview": {
+      "type": "text"
+    },
+    "id_artist": {
+      "type": "biginteger"
+    },
+    "id_album": {
+      "type": "biginteger"
+    },
+    "explicit_lyrics": {
+      "type": "boolean"
+    },
+    "id_chart": {
+      "type": "biginteger"
+    }
+  }
+}

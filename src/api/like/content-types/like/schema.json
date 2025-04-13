@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "likes",
+  "info": {
+    "singularName": "like",
+    "pluralName": "likes",
+    "displayName": "like",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "id_user": {
+      "type": "biginteger"
+    },
+    "id_track": {
+      "type": "biginteger"
+    },
+    "id_like": {
+      "type": "uid"
+    }
+  }
+}

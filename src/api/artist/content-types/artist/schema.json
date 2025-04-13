@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "artists",
+  "info": {
+    "singularName": "artist",
+    "pluralName": "artists",
+    "displayName": "Artist",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "id_artist": {
+      "type": "biginteger",
+      "unique": true
+    },
+    "link": {
+      "type": "text"
+    },
+    "nb_album": {
+      "type": "biginteger"
+    },
+    "nb_fans": {
+      "type": "biginteger"
+    },
+    "picture": {
+      "type": "text"
+    }
+  }
+}
