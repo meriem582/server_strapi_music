@@ -587,38 +587,6 @@ export interface ApiLikeLike extends Struct.CollectionTypeSchema {
   };
 }
 
-export interface ApiRechercheRecherche extends Struct.CollectionTypeSchema {
-  collectionName: 'recherches';
-  info: {
-    description: '';
-    displayName: 'Recherche';
-    pluralName: 'recherches';
-    singularName: 'recherche';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  attributes: {
-    createdAt: Schema.Attribute.DateTime;
-    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
-      Schema.Attribute.Private;
-    date_recherche: Schema.Attribute.Date;
-    id_recherche: Schema.Attribute.UID;
-    id_user: Schema.Attribute.BigInteger;
-    locale: Schema.Attribute.String & Schema.Attribute.Private;
-    localizations: Schema.Attribute.Relation<
-      'oneToMany',
-      'api::recherche.recherche'
-    > &
-      Schema.Attribute.Private;
-    publishedAt: Schema.Attribute.DateTime;
-    terme_recherche: Schema.Attribute.Text;
-    updatedAt: Schema.Attribute.DateTime;
-    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
-      Schema.Attribute.Private;
-  };
-}
-
 export interface ApiResponseResponse extends Struct.CollectionTypeSchema {
   collectionName: 'responses';
   info: {
@@ -635,8 +603,9 @@ export interface ApiResponseResponse extends Struct.CollectionTypeSchema {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    date_response: Schema.Attribute.Date;
-    id_commentaire: Schema.Attribute.BigInteger;
+    date_response: Schema.Attribute.DateTime;
+    id_comment: Schema.Attribute.BigInteger;
+    id_user: Schema.Attribute.BigInteger;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',
@@ -1202,7 +1171,6 @@ declare module '@strapi/strapi' {
       'api::commentaire.commentaire': ApiCommentaireCommentaire;
       'api::genre.genre': ApiGenreGenre;
       'api::like.like': ApiLikeLike;
-      'api::recherche.recherche': ApiRechercheRecherche;
       'api::response.response': ApiResponseResponse;
       'api::track.track': ApiTrackTrack;
       'plugin::content-releases.release': PluginContentReleasesRelease;

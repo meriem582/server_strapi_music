@@ -15,9 +15,12 @@
       "type": "text"
     },
     "date_response": {
-      "type": "date"
+      "type": "datetime"
     },
-    "id_commentaire": {
+    "id_comment": {
+      "type": "biginteger"
+    },
+    "id_user": {
       "type": "biginteger"
     }
   }
