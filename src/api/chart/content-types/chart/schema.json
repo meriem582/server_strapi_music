@@ -31,6 +31,18 @@
     },
     "id_chart": {
       "type": "biginteger"
+    },
+    "nom_artist": {
+      "type": "text"
+    },
+    "picture_artist": {
+      "type": "text"
+    },
+    "link_artist": {
+      "type": "text"
+    },
+    "nom_album": {
+      "type": "text"
     }
   }
 }
