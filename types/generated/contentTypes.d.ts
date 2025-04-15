@@ -516,8 +516,7 @@ export interface ApiCommentaireCommentaire extends Struct.CollectionTypeSchema {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    date_commentaire: Schema.Attribute.Date;
-    id_commentaire: Schema.Attribute.UID;
+    date_commentaire: Schema.Attribute.DateTime;
     id_track: Schema.Attribute.BigInteger;
     id_user: Schema.Attribute.BigInteger;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
@@ -638,7 +637,6 @@ export interface ApiResponseResponse extends Struct.CollectionTypeSchema {
       Schema.Attribute.Private;
     date_response: Schema.Attribute.Date;
     id_commentaire: Schema.Attribute.BigInteger;
-    id_response: Schema.Attribute.UID;
     locale: Schema.Attribute.String & Schema.Attribute.Private;
     localizations: Schema.Attribute.Relation<
       'oneToMany',

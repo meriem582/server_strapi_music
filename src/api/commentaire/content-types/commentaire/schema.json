@@ -14,9 +14,6 @@
     "contenu": {
       "type": "text"
     },
-    "id_commentaire": {
-      "type": "uid"
-    },
     "id_user": {
       "type": "biginteger"
     },
@@ -24,7 +21,7 @@
       "type": "biginteger"
     },
     "date_commentaire": {
-      "type": "date"
+      "type": "datetime"
     }
   }
 }
