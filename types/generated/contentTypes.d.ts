@@ -411,7 +411,6 @@ export interface ApiAlbumAlbum extends Struct.CollectionTypeSchema {
     draftAndPublish: true;
   };
   attributes: {
-    cover: Schema.Attribute.Text;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -454,8 +453,6 @@ export interface ApiArtistArtist extends Struct.CollectionTypeSchema {
     > &
       Schema.Attribute.Private;
     name: Schema.Attribute.String & Schema.Attribute.Required;
-    nb_album: Schema.Attribute.BigInteger;
-    nb_fans: Schema.Attribute.BigInteger;
     picture: Schema.Attribute.Text;
     publishedAt: Schema.Attribute.DateTime;
     updatedAt: Schema.Attribute.DateTime;
@@ -479,7 +476,6 @@ export interface ApiChartChart extends Struct.CollectionTypeSchema {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    explicit_lyrics: Schema.Attribute.Boolean;
     id_album: Schema.Attribute.BigInteger;
     id_artist: Schema.Attribute.BigInteger;
     id_chart: Schema.Attribute.BigInteger;
@@ -634,8 +630,6 @@ export interface ApiTrackTrack extends Struct.CollectionTypeSchema {
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
-    duration: Schema.Attribute.BigInteger;
-    explicit_lyrics: Schema.Attribute.Boolean;
     id_album: Schema.Attribute.BigInteger;
     id_artist: Schema.Attribute.BigInteger;
     id_track: Schema.Attribute.BigInteger;
@@ -645,8 +639,6 @@ export interface ApiTrackTrack extends Struct.CollectionTypeSchema {
       Schema.Attribute.Private;
     preview: Schema.Attribute.Text;
     publishedAt: Schema.Attribute.DateTime;
-    rank: Schema.Attribute.BigInteger;
-    release_date: Schema.Attribute.Date;
     title: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &

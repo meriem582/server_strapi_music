@@ -22,12 +22,6 @@
     "link": {
       "type": "text"
     },
-    "nb_album": {
-      "type": "biginteger"
-    },
-    "nb_fans": {
-      "type": "biginteger"
-    },
     "picture": {
       "type": "text"
     }

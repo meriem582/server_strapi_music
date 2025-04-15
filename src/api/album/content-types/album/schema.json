@@ -21,9 +21,6 @@
     "release_date": {
       "type": "date"
     },
-    "cover": {
-      "type": "text"
-    },
     "id_album": {
       "type": "biginteger",
       "unique": true

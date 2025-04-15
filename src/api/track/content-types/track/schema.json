@@ -23,18 +23,6 @@
     "link": {
       "type": "text"
     },
-    "duration": {
-      "type": "biginteger"
-    },
-    "rank": {
-      "type": "biginteger"
-    },
-    "release_date": {
-      "type": "date"
-    },
-    "explicit_lyrics": {
-      "type": "boolean"
-    },
     "id_album": {
       "type": "biginteger"
     },

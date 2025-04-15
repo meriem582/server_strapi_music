@@ -26,9 +26,6 @@
     "id_album": {
       "type": "biginteger"
     },
-    "explicit_lyrics": {
-      "type": "boolean"
-    },
     "id_chart": {
       "type": "biginteger"
     },
