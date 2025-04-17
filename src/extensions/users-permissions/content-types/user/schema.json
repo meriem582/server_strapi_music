@@ -73,9 +73,6 @@
         "images",
         "files"
       ]
-    },
-    "id_user": {
-      "type": "uid"
     }
   }
 }
